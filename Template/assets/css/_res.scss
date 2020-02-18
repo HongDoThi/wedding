@@ -1,0 +1,169 @@
+@media screen and (max-width: 768px) and (min-width: 415px) {
+    .top__menu {
+        .dFlex {
+            .menu__top__left {
+                flex-basis: 20%;
+                max-width: 20%;
+            }
+            .menu__top__right {
+                flex-basis: 80%;
+                max-width: 80%;
+            }
+        }
+    }
+    .block__parallax__content {
+        h3 {
+            width: 64%;
+        }
+    }
+    .photo {
+        .photo__section {
+            width: 25%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .married {
+        .dFlex {
+            flex-wrap: wrap;
+            .married__left {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+            .married__right {
+                flex-basis: 100%;
+                max-width: 100%;
+                padding-left: 0;
+                margin-top: 30px;
+            }
+        }
+    }
+    .tab {
+        .tab__content {
+            .dFlex {
+                flex-wrap: wrap;
+                .tab__content__ele {
+                    flex-basis: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+        ul.tab__link {
+            justify-content: flex-start;
+        }
+    }
+    .event {
+        .event__section {
+            width: 35%;
+        }
+        .event__list {
+            flex-wrap: wrap;
+            .event__item {
+                flex-basis: 100%;
+                max-width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .top__menu {
+        position: relative;
+        .dFlex {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .menu__top__left {
+                flex-basis: 100%;
+                max-width: 100%;
+                text-align: center;
+            }
+            .menu__top__right {
+                position: absolute;
+                top: 100%;
+                height: 0;
+                overflow: hidden;
+                background-color: white;
+                z-index: 9;
+                display: block;
+                width: 100%;
+                transition: 0.4s;
+                ul.nav__top {
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    li.nav__link {
+                        width: 100%;
+                        border-bottom: 1px solid #f0f0f0;
+                        a.nav__item {
+                            color: #5d5b5b;
+                            padding: 12px;
+                            width: 100%;
+                        }
+                        ul.nav__top__submenu {
+                            transition: 0.4s;
+                            position: absolute;
+                            top: 100%;
+                            width: 100%;
+                            transform: unset;
+                            height: 0;
+                            overflow: hidden;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            li.submenu__item {
+                                border-bottom: 1px solid #f0f0f0;
+                            }
+                            &.active {
+                                height: 100vh;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                &.active {
+                    height: 38vh;
+                    width: 100%;
+                }
+            }
+            .iconRes {
+                text-align: center;
+                display: block;
+            }
+        }
+    }
+    .block__parallax__content {
+        .countdown {
+            width: 90%;
+            .countdown__section {
+                .countdown__amount {
+                    font-size: 1rem;
+                }
+            }
+        }
+        h3 {
+            width: 100%;
+        }
+    }
+    .photo {
+        .photo__section {
+            width: 52%;
+        }
+    }
+    .event {
+        .event__section {
+            width: 72%;
+        }
+    }
+    h1 {
+        font-size: 34px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    .tab {
+        .tab__section {
+            width: 86%;
+        }
+    }
+}
